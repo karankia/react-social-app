@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://karan123:karan123@mernapp-doqp1.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mySecretToken",
+  "githubClientId": "69c7a42dbbbd4ef87f73",
+  "githubSecret": "ede506c674de9ee2987ed169360c48f0e4137863"
+}
