@@ -32,7 +32,7 @@ const GoogleMap = ({location, google}) => {
 
 
     return <Fragment>
-        <div>
+        <div >
             <Map
                 google={google}
                 zoom={8}

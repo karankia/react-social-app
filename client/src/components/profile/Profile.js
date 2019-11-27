@@ -30,9 +30,7 @@ const Profile = ({ getProfileById, profile: { profile, loading }, auth, match })
             <div className="profile-grid my-1">
                 <ProfileTop profile={ profile }/>
                 <ProfileAbout profile={profile} />
-                <div className='profile-exp bg-white p-2'>
-                    {profile.location && <GoogleMap location={profile.location}/>}
-                </div>
+
                 <div className='profile-exp bg-white p-2'>
                     <h2 className="text-primary"> Experience </h2>
                     { profile.experience.length > 0 ? (<Fragment>
@@ -57,6 +55,11 @@ const Profile = ({ getProfileById, profile: { profile, loading }, auth, match })
                 { profile.githubusername &&
                     <ProfileGithub username={profile.githubusername}/>
                 }
+            </div>
+            <div  className='profile-exp bg-white p-2'>
+                <div style={{ position: 'relative', width: '50vw', height: '40vh' }}>
+                    {profile.location && <GoogleMap location={profile.location}/>}
+                </div>
             </div>
         </Fragment>}
     </Fragment>
