@@ -30,18 +30,18 @@ const GoogleMap = ({location, google}) => {
         }
     );
 
-    
 
     return <Fragment>
-        <Map
-            google={google}
-            zoom={8}
-            style={mapStyles}
-            initialCenter={{ lat: latitude, lng: longitude}}
-        >
-            <Marker position={{ lat: latitude, lng: latitude}} />
-        </Map>
-
+        <div>
+            <Map
+                google={google}
+                zoom={8}
+                style={mapStyles}
+                center={{ lat: latitude , lng: longitude }}
+            >
+                <Marker position={{ lat: latitude , lng: longitude }} />
+            </Map>
+        </div>
     </Fragment>;
 };
 
