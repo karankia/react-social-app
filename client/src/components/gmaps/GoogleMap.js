@@ -30,21 +30,18 @@ const GoogleMap = ({location, google}) => {
         }
     );
 
-
-
+    
 
     return <Fragment>
-        <div className="profile-grid my-1">
-            
-            <Map
-                google={google}
-                zoom={8}
-                style={mapStyles}
-                initialCenter={{ lat: latitude, lng: longitude}}
-            >
-                <Marker position={{ lat: latitude, lng: latitude}} />
-            </Map>
-        </div>
+        <Map
+            google={google}
+            zoom={8}
+            style={mapStyles}
+            initialCenter={{ lat: latitude, lng: longitude}}
+        >
+            <Marker position={{ lat: latitude, lng: latitude}} />
+        </Map>
+
     </Fragment>;
 };
 
